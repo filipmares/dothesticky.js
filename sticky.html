@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="jquery.min.js"></script>
+    <script src="do.the.sticky.js"></script>
+    <style>
+
+        #wrapper {
+            margin-top: 100px;
+            height: 500px;
+            width: 100%;
+            overflow: scroll;
+            border: 1px solid blue;
+        }
+
+        #container {
+            /*position: relative;*/
+            padding-bottom: 100%;
+        }
+
+        .sticky {
+            position: relative;
+            height: 100px;
+            width: 100%;
+            background: #eee;
+        }
+
+        .glue.move {
+            position: absolute
+        }
+    </style>
+    <!-- <script src="require.min.js"></script> -->
+</head>
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <br/><br/>
+            <div class="sticky">1</div>
+            <br/><br/>
+            <div class="sticky">2</div>
+            <br><br>
+            <div class="sticky">3</div>
+            <br><br>
+            <div class="sticky">4</div>
+            <!-- <div class="soap"></div>
+            <div class="soap"></div>
+            <div class="soap"></div>
+            <div class="soap"></div> -->
+            <div class="sticky">5</div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        // require(['do.the.sticky'], function(sticky){
+        //     $('#container').doTheSticky();
+        // });
+        //
+
+        $('#wrapper').doTheSticky();
+
+    </script>
+</body>
+</html>
